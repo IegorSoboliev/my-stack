@@ -18,7 +18,7 @@ public class MyStackTest {
 
     @Test
     public void isEmptyValid () {
-        stack.pop(element);
+        stack.pop();
         Assert.assertTrue(stack.isEmpty());
     }
 
@@ -39,13 +39,13 @@ public class MyStackTest {
 
     @Test
     public void popValid() {
-        Assert.assertEquals(stack.pop(element), element);
+        Assert.assertEquals(stack.pop(), element);
         Assert.assertTrue(stack.isEmpty());
     }
 
     @Test
     public void popNotValid() {
-        Assert.assertFalse(stack.pop(element) != element);
+        Assert.assertFalse(stack.pop() != element);
         Assert.assertFalse(stack.getTop() != -1);
     }
 

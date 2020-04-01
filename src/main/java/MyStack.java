@@ -13,7 +13,7 @@ public class MyStack {
         stackArray[++top] = element;
     }
 
-    public int pop(int element) {
+    public int pop() {
         return stackArray[top--];
     }
 
